@@ -1,0 +1,70 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+/*************************************************************************
+ *                                                                       *
+ * artwork                                                               *
+ *                                                                       *
+ *************************************************************************/
+
+.artwork body {
+	background-color: #212121;
+}
+
+.artwork body,
+.artwork a {
+	color: #aaa;
+}
+
+.artwork a {
+	text-decoration: none;
+}
+
+.artwork body {
+	display: flex;
+	flex-direction: column; /* Stack main content and nav vertically */
+	align-items: center;    /* Center everything horizontally */
+	min-height: 100vh;
+	font-family: monospace;
+}
+
+/* This container holds the image and footer */
+.artwork main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    
+	flex-grow: 1; /* Takes up all available space, pushing the nav to the bottom */
+}
+
+/* Keeps the navigation pinned to the bottom */
+.artwork nav {
+	width: 100%;
+	padding-bottom: 20px; /* Adds some breathing room at the very bottom */
+}
+
+.artwork nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center; /* Centers the arrows horizontally */
+	gap: 30px;
+}
+
+/* Optional styling to keep the image crisp and centered */
+.artwork figure img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.artwork figcaption, footer {
+	text-align: center;
+	margin-top: 10px;
+}
