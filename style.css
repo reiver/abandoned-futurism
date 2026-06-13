@@ -68,3 +68,17 @@ html, body {
 	text-align: center;
 	margin-top: 10px;
 }
+
+/*************************************************************************
+ *                                                                       *
+ * mosaic                                                                *
+ *                                                                       *
+ *************************************************************************/
+
+.mosaic body {
+	background-color: #c0c0c0; /* Standard light gray */
+	color: #000000;            /* Crisp black text */
+	font-family: "Times New Roman", Times, serif;
+	padding: 20px;
+	line-height: 1.2;          /* Tighter, old-school line spacing *
+}
